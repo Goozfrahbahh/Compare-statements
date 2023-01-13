@@ -1,0 +1,102 @@
+<div class="Application Entry w-full h-full">
+	<div class="twinkling"></div>
+	<div class="clouds"></div>
+	<div class="bg-slate-800 flex flex-col flex-1 w-full h-full shadow-2xl">
+		<div class="flex flex-col justify-center pb-1 text-center">
+			<div class="navigation flex flex-col">
+				<nav class="bg-slate-800 px-8 pt-2 shadow-md">
+					<div class="flex flex-row content-center justify-center align-middle">
+						<a class="hover:text-white hover:border-b-[1px] hover:border-white hover:drop-shadow-2xl mr-20 flex text-md py-3 mr-8 font-serif font-semibold tracking-wide text-gray-400 no-underline uppercase justify-center"
+							[routerLink]="['/']">
+							<svg class="w-10 h-10 text-red-500" viewBox="0 0 24 24" fill="#696969" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<rect class="text-[#2360c3] animate-pulse hover:animate-none" fill="#237ec3" x="3" y="3" width="7" height="7" />
+								<rect class="text-[#5d5d5d] animate-pulse hover:animate-none" x="14" y="3" width="7" height="7" />
+								<rect class="text-[#ffa166] animate-pulse hover:animate-none" fill="#ffc266" x="14" y="14" width="	7" height="7" />
+								<rect class="text-[#5d5d5d] animate-pulse hover:animate-none" x="3" y="14" width="7" height="7" />
+							</svg>
+						</a>
+						<a class="text-md flex hover:border-b-[1px] flex self-center justify-center hover:border-white hover:shadow-2xl border-black hover:text-white py-3 mr-8 mt-2 tracking-wide text-gray-400 no-underline align-middle content-center uppercase"
+							[routerLink]="['/compare']">
+							Compare Data
+						</a>
+					</div>
+				</nav>
+				<div class="start router bg-zinc-800 absolute w-full h-full mt-16">
+					<div class="p-y-1 flex h-screen p-2">
+						<div class="h-[88vh] md:w-5/6 w-full mx-auto bg-slate-800 rounded-md shadow-md">
+							<header class="flex items-center justify-between px-2 py-2">
+								<div class="flex flex-row items-center justify-center px-2 py-2 align-middle">
+									<div
+										class="self-center w-4 h-4 p-1 mr-2 text-white bg-red-400 rounded-full cursor-pointer">
+									</div>
+									<div
+										class="w-4 h-4 p-1 mr-2 text-white bg-yellow-400 rounded-full cursor-pointer">
+									</div>
+									<div
+										class="w-4 h-4 p-1 mr-5 text-white bg-green-400 rounded-full cursor-pointer">
+									</div>
+									<button
+										class="transition-color hover:bg-zinc-800 hover:bg-opacity-60 focus:outline-none focus:ring-2 flex flex-col items-center justify-center p-1 m-1 text-gray-500 rounded-full">
+										<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+											<path d="M3.015,4.779h1.164V3.615H3.015V4.779z M18.73,1.869H1.269c-0.322,0-0.582,0.26-0.582,0.582v15.133
+											     		  			 	c0,0.322,0.26,0.582,0.582,0.582H18.73c0.321,0,0.582-0.26,0.582-0.582V2.451C19.312,2.129,19.052,1.869,18.73,1.869z
+											                  				M18.148,16.42c0,0.322-0.261,0.582-0.582,0.582H2.433c-0.322,0-0.582-0.26-0.582-0.582V6.525h16.297V16.42z M18.148,5.361H1.851
+											                  				V3.615c0-0.322,0.26-0.582,0.582-0.582h15.133c0.321,0,0.582,0.26,0.582,0.582V5.361z M7.671,4.779h1.165V3.615H7.671V4.779z
+											                  				M5.344,4.779h1.164V3.615H5.344V4.779z"></path>
+										</svg>
+									</button>
+									<button
+										class="transition-color hover:shadow-md hover:bg-slate-700 hover:bg-opacity-60 focus:outline-none focus:ring-2 flex flex-col items-center justify-center p-1 m-1 text-gray-400 rounded-full">
+										<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+											<path
+												d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z">
+											</path>
+										</svg>
+									</button>
+									<button
+										class="transition-color hover:bg-slate-700 hover:bg-opacity-60 focus:outline-none focus:ring-2 flex flex-col items-center justify-center p-1 m-1 text-gray-400 rounded-full">
+										<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+											<path
+												d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z">
+											</path>
+										</svg>
+									</button>
+								</div>
+								<div class="flex flex-row items-center text-gray-500">
+									<button
+										class="hover:bg-slate-700 hover:bg-opacity-60 focus:outline-none focus:ring-2 flex flex-col items-center justify-center p-1 m-1 transition-colors rounded-full">
+										<svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+											<path
+												d="M8.416,3.943l1.12-1.12v9.031c0,0.257,0.208,0.464,0.464,0.464c0.256,0,0.464-0.207,0.464-0.464V2.823l1.12,1.12c0.182,0.182,0.476,0.182,0.656,0c0.182-0.181,0.182-0.475,0-0.656l-1.744-1.745c-0.018-0.081-0.048-0.16-0.112-0.224C10.279,1.214,10.137,1.177,10,1.194c-0.137-0.017-0.279,0.02-0.384,0.125C9.551,1.384,9.518,1.465,9.499,1.548L7.76,3.288c-0.182,0.181-0.182,0.475,0,0.656C7.941,4.125,8.234,4.125,8.416,3.943z M15.569,6.286h-2.32v0.928h2.32c0.512,0,0.928,0.416,0.928,0.928v8.817c0,0.513-0.416,0.929-0.928,0.929H4.432c-0.513,0-0.928-0.416-0.928-0.929V8.142c0-0.513,0.416-0.928,0.928-0.928h2.32V6.286h-2.32c-1.025,0-1.856,0.831-1.856,1.856v8.817c0,1.025,0.832,1.856,1.856,1.856h11.138c1.024,0,1.855-0.831,1.855-1.856V8.142C17.425,7.117,16.594,6.286,15.569,6.286z">
+											</path>
+										</svg>
+									</button>
+									<button
+										class="transition-color hover:bg-slate-700 hover:bg-opacity-60 focus:outline-none focus:ring-2 flex flex-col items-center justify-center p-1 m-1 rounded-full">
+										<svg class="w-4 h-4 fill-current" viewBox="0 0 25 25">
+											<path d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z" />
+										</svg>
+									</button>
+									<button
+										class="transition-color hover:bg-slate-700 hover:bg-opacity-60 focus:outline-none focus:ring-2 flex flex-col items-center justify-center p-1 m-1 rounded-full">
+										<svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+											<path d="M18.378,1.062H3.855c-0.309,0-0.559,0.25-0.559,0.559c0,0.309,0.25,0.559,0.559,0.559h13.964v13.964
+											                  c0,0.309,0.25,0.559,0.559,0.559c0.31,0,0.56-0.25,0.56-0.559V1.621C18.938,1.312,18.688,1.062,18.378,1.062z M16.144,3.296H1.621
+											                  c-0.309,0-0.559,0.25-0.559,0.559v14.523c0,0.31,0.25,0.56,0.559,0.56h14.523c0.309,0,0.559-0.25,0.559-0.56V3.855
+											                  C16.702,3.546,16.452,3.296,16.144,3.296z M15.586,17.262c0,0.31-0.25,0.558-0.56,0.558H2.738c-0.309,0-0.559-0.248-0.559-0.558
+											                  V4.972c0-0.309,0.25-0.559,0.559-0.559h12.289c0.31,0,0.56,0.25,0.56,0.559V17.262z"></path>
+										</svg>
+									</button>
+								</div>
+							</header>
+							<div class="router container">
+								<router-outlet></router-outlet>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
